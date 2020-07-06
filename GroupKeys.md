@@ -11,7 +11,7 @@ Inputs:
 * Countersign Algorithm Parameters: [[2], [2, 1]]
 * Countersign Key Parameters: [2, 1]
 
-* Entity #1 Id: 0x0001 (2 bytes)
+* Entity #1 Id: 0xE1 (1 bytes)
 * Entity #1 Key:
 ~~~
   {
@@ -27,7 +27,7 @@ d28bbfc117e',
   }
 ~~~
 
-* Entity #2 Id: 0x0200 (2 bytes)
+* Entity #2 Id: 0xE2 (1 bytes)
 * Entity #2 Key:
 ~~~
   {
@@ -43,7 +43,7 @@ ecd0084d19c',
   }
 ~~~
 
-* Entity #3 Id: 0x0203 (2 bytes)
+* Entity #3 Id: 0xE3 (1 bytes)
 * Entity #3 Key:
 ~~~
   {
@@ -58,6 +58,23 @@ ecd0084d19c',
 22a848df1c3'
   }
 ~~~
+
+### Pairwise keys
+
+#1->#3
+
+~~~~
+Secret = 18-3F-20-BD-9A-3D-A7-8D-12-F3-0E-DA-8B-08-DB-72-AB-E2-2B-D3-15-68-D1-8D-1C-8C-B9-C5-33-A7-EC-DF
+Salt = 66-7F-3B-48-36-FE-29-69-6B-06-45-9A-FB-EF-38-6F
+
+
+Sender Key = 0D-0D-94-4D-90-A8-66-BF-10-39-BD-10-89-9F-F5-1D
+
+Info = 85-41-E3-43-09-ED-DA-0A-63-4B-65-79-10
+Recipient Key = 76-6E-30-99-0F-4C-4E-60-ED-86-FD-0D-26-94-97-C8
+~~~~
+
+#3 -> #1
 
 
 ## Jim Test 2
