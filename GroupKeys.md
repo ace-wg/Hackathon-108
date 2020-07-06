@@ -94,3 +94,58 @@ Recipient Key = 76-6E-30-99-0F-4C-4E-60-ED-86-FD-0D-26-94-97-C8
 
 * Entity #3 Id: 0x0203 (2 bytes)
 * Entity #3 Public Key:
+
+
+## Rikard Test 1
+
+Inputs:
+
+* Master Secret: 0x0102030405060708090a0b0c0d0e0f10 (16 bytes)
+* Master Salt: 0x9e7ca92223786340 (8 bytes)
+* Group Id: 0x37cbf3210017a2d3 (8 bytes)
+* Countersign Algorithm: -7 (ECDSA w/ SHA-256)
+* Countersign Algorithm Parameters: [[2], [2, 1]]
+* Countersign Key Parameters: [2, 1]
+
+* Entity #1 Id: 0x01 (1 bytes)
+* Entity #1 Key:
+~~~
+  {
+    / kty / 1: 2,
+    / kid / 2: h'01',
+    / d / -4: h'FEA2190084748436543C5EC8E329D2AFBD7068054F595CA1F987B9E43E2205E6',
+    / y / -3: h'64CE3DD128CC4EFA6DE209BE8ABD111C7272F612C2DB654057B6EC00FBFB0684',
+    / x / -2: h'1ADB2AB6AF48F17C9877CF77DB4FA39DC0923FBE215E576FE6F790B1FF2CBC96',
+    / crv / -1: 1
+  }
+~~~
+
+* Entity #2 Id: 0x (0 bytes)
+* Entity #2 Key:
+~~~
+  {
+    / kty / 1: 2,
+    / kid / 2: h'',
+    / d / -4: h'DA2593A6E0BCC81A5941069CB76303487816A2F4E6C0F21737B56A7C90381597',
+    / y / -3: h'1897A28666FE1CC4FACEF79CC7BDECDC271F2A619A00844FCD553A12DD679A4F',
+    / x / -2: h'0EB313B4D314A1001244776D321F2DD88A5A31DF06A6EEAE0A79832D39408BC1',
+    / crv / -1: 1
+  }
+~~~
+
+* Entity #3 Id: 0xAA (1 bytes)
+* Entity #3 Key:
+~~~
+  {
+    / kty / 1: 2,
+    / kid / 2: h'AA',
+    / d / -4: h'BF31D3F9670A7D1342259E700F48DD9983A5F9DF80D58994C667B6EBFD23270E',
+    / y / -3: h'5694315AD17A4DA5E3F69CA02F83E9C3D594712137ED8AFB748A70491598F9CD',
+    / x / -2: h'FAD4312A45F45A3212810905B223800F6CED4BC8D5BACBC8D33BB60C45FC98DD',
+    / crv / -1: 1
+  }
+~~~
+
+
+## Rikard Test 2
+
