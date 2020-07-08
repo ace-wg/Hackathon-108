@@ -70,3 +70,26 @@ Encoded Request = 54-02-FF-FF-34-73-12-11-9C-39-00-08-37-CB-F3-21-00-17-A2-D3-01
 ~~~
 
 > Rikard: As mentioned above I fixed the issue with the to-be-signed data. I have now updated my message contents with re-generated values after this fix. Only the payload and encoded request should be different.
+
+## Message #3
+
+Use key 'Rikard Test 2' - Entity #1
+
+~~~
+AAD =  85-01-84-0A-27-82-81-01-82-01-06-82-01-06-41-0A-41-01-40
+    [1, [10, -8, [[1], [1, 6]], [1, 6]], h'0A', h'01', h'']
+      
+IV = 17-65-5E-BD-E5-09-8E-0D-46-A6-E9-DA-A2
+Sender Key = 33-BA-DB-4D-6B-48-7E-16-BC-8D-C3-F6-DB-38-29-90
+
+Signature AAD = 86-01-84-0A-27-82-81-01-82-01-06-82-01-06-41-0A-41-01-40-46-39-01-02-DD-11-0A
+          [1, [10, -8, [[1], [1, 6]], [1, 6]], h'0A', h'01', h'', h'390102DD110A']
+          
+ToBeSigned = 85-71-43-6F-75-6E-74-65-72-53-69-67-6E-61-74-75-72-65-30-40-40-58-1A-86-01-84-0A-27-82-81-01-82-01-06-82-01-06-41-0A-41-01-40-46-39-01-02-DD-11-0A-49-42-41-71-AB-DF-18-40-50-29
+           ["CounterSignature0", h'', h'', h'8601840A27828101820106820106410A41014046390102DD110A', h'424171ABDF18405029']
+
+Payload = 42-41-71-AB-DF-18-40-50-29-79-42-02-2C-7A-85-E1-75-17-24-6B-31-DB-B1-0C-50-78-73-0E-9D-08-57-E3-EA-0A-63-0F-AF-D1-B2-24-23-64-7E-C0-9A-5D-60-C7-4F-1A-45-B2-95-DB-10-D5-56-9D-6D-A0-9F-44-3E-79-2D-6A-72-BF-BC-72-E3-2C-0D
+
+Encoded Request = 58-02-FF-FF-11-84-AF-72-82-CE-23-BA-96-39-01-02-DD-11-0A-FF-42-41-71-AB-DF-18-40-50-29-79-42-02-2C-7A-85-E1-75-17-24-6B-31-DB-B1-0C-50-78-73-0E-9D-08-57-E3-EA-0A-63-0F-AF-D1-B2-24-23-64-7E-C0-9A-5D-60-C7-4F-1A-45-B2-95-DB-10-D5-56-9D-6D-A0-9F-44-3E-79-2D-6A-72-BF-BC-72-E3-2C-0D
+~~~
+
