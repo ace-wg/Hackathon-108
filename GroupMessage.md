@@ -30,6 +30,8 @@ Encoded Request = 40-02-FF-FF-97-39-01-03-0A-0B-0C-E1-FF-F0-A0-FB-E1-AE-80-E9-24
 > JLS: I have updated the context and entity IDs in the keys file so they are consistent with what I am using.
 > I added a ToBeSigned field which is the COSE ToBeSigned
 
+> Rikard (July 12): Check the Group Id in GroupKeys.md also, I noticed it wasn't updated. In GroupKeys it is 0x09EDDA but in this message 0x0A0B0C.
+
 >Rikard: I understand what was going wrong now. This is the ToBeSigned I got:
 ~~~
 ["CounterSignature0", null, h'', h'8601840A2682810282020182020141E1410140473901030A0B0CE1', h'F0A0FBE1AE80E924C90E04427D']
