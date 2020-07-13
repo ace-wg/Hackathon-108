@@ -156,3 +156,45 @@ Inputs:
 
 ## Rikard Test 2
 
+* Master Secret:  0x11223344556677889900AABBCCDDEEFF (16 bytes)
+* Master Salt: 0x1F2E3D4C5B6A7081 (8 bytes)
+* Group Id: 0xDD11 (2 bytes)
+* Countersign Algorithm: -8 (EdDSA)
+* Countersign Algorithm Parameters: [[1], [1, 6]]
+* Countersign Key Parameters: [1, 6]
+
+* Entity #1 Id: 0x0A (1 bytes)
+* Entity #1 Key:
+~~~
+  {
+    / kty / 1: 1,
+    / kid / 2: h'0A',
+    / d / -4: h'397CEB5A8D21D74A9258C20C33FC45AB152B02CF479B2E3081285F77454CF347',
+    / x / -2: h'CE616F28426EF24EDB51DBCEF7A23305F886F657959D4DF889DDFC0255042159',
+    / crv / -1: 6
+  }
+~~~
+
+* Entity #2 Id: 0x51 (1 byte)
+* Entity #2 Key:
+~~~
+  {
+    / kty / 1: 1,
+    / kid / 2: h'51',
+    / d / -4: h'70559B9EECDC578D5FC2CA37F9969630029F1592AFF3306392AB15546C6A184A',
+    / x / -2: h'2668BA6CA302F14E952228DA1250A890C143FDBA4DAED27246188B9E42C94B6D',
+    / crv / -1: 6
+  }
+~~~
+
+* Entity #3 Id: 0x52 (1 byte)
+* Entity #3 Key:
+~~~
+  {
+    / kty / 1: 1,
+    / kid / 2: h'52',
+    / d / -4: h'E550CD532B881D52AD75CE7B91171063E568F2531FBDFB32EE01D1910BCF810F',
+    / x / -2: h'5394E43633CDAC96F05120EA9F21307C9355A1B66B60A834B53E9BF60B1FB7DF',
+    / crv / -1: 6
+  }
+~~~
