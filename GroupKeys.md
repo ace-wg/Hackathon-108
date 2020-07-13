@@ -76,6 +76,13 @@ Recipient Key = 76-6E-30-99-0F-4C-4E-60-ED-86-FD-0D-26-94-97-C8
 
 #3 -> #1
 
+~~~
+Secret = 18-3F-20-BD-9A-3D-A7-8D-12-F3-0E-DA-8B-08-DB-72-AB-E2-2B-D3-15-68-D1-8D-1C-8C-B9-C5-33-A7-EC-DF
+
+Sender Key = 76-6E-30-99-0F-4C-4E-60-ED-86-FD-0D-26-94-97-C8
+
+Recipient Key = 0D-0D-94-4D-90-A8-66-BF-10-39-BD-10-89-9F-F5-1D
+~~~
 
 ## Jim Test 2
 
