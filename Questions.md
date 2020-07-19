@@ -15,4 +15,4 @@
 [the following location](https://github.com/rikard-sics/californium/blob/group_oscore/cf-oscore/src/main/java/org/eclipse/californium/oscore/group/KeyRemapping.java#L296) with testing code [here](https://github.com/rikard-sics/californium/blob/group_oscore/cf-oscore/src/test/java/org/eclipse/californium/oscore/group/KeyRemappingTest.java#L163), based on the alternative curve representations [LWIG draft section E](https://tools.ietf.org/html/draft-ietf-lwig-curve-representations-10#appendix-E).
 My understanding is that in the case Weierstrass curves are used that would mean the signing can be done with [ECDSA25519](https://tools.ietf.org/html/draft-ietf-lwig-curve-representations-10#section-10.2) and the shared secret calculation with [ECDH25519](https://tools.ietf.org/html/draft-ietf-lwig-curve-representations-10#section-10.3), although I am still looking into this. (Rikard)
 
-
+4. What date and time would fit best for you to do the interop testing? After you have gotten to Madrid time on Wednesday? Both Marco and I are quite flexible with the schedule. (Rikard)

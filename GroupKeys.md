@@ -84,6 +84,8 @@ Sender Key = 76-6E-30-99-0F-4C-4E-60-ED-86-FD-0D-26-94-97-C8
 Recipient Key = 0D-0D-94-4D-90-A8-66-BF-10-39-BD-10-89-9F-F5-1D
 ~~~
 
+> Rikard: I get the same shared secret calculated. Regarding the Sender and Recipient keys, in GroupMessages Message 1 the Group Id is 0x0A0B0C but in this file 0x09EDDA. For these keys you used 0x09EDDA?
+
 ## Jim Test 2
 
 * Master Secret:  0x0102030405060708090a0b0c0d0e0f10 (16 bytes)
