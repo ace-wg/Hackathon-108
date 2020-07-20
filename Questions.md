@@ -23,4 +23,4 @@ My understanding is that in the case Weierstrass curves are used that would mean
 4. What date and time would fit best for you to do the interop testing? After you have gotten to Madrid time on Wednesday? Both Marco and I are quite flexible with the schedule. (Rikard)
    [JLS] I will be on late Madrid time tomorrow.  I am currently up around Noon Stockholm time.  My schedule is wide open - If I am awake I will generally be online.
 
-> Rikard: Alright, then shall we say tomorrow 10.00 Madrid time? Or if you prefer during the afternoon perhaps at 14.00? For communication Marco and I sometimes use https://jitsi.org/ which can be convenient, we could use that during the session.
+> Rikard: Alright, then shall we say tomorrow July 21 at 10.00 Madrid time? Or if you prefer during the afternoon perhaps at 14.00? For communication Marco and I sometimes use https://jitsi.org/ which can be convenient, we could use that during the session.
