@@ -33,7 +33,8 @@ My understanding is that in the case Weierstrass curves are used that would mean
 
 > JLS: 14:00 is much better than 10:00.  I am agnostic about the communication tool to use.  I am most likely going to hang out in the gather application when I am not elsewhere.  I will also try to be on Jabber most of the time as well.
 
+> Rikard: Okay, sounds good. I have created a Jitsi meeting room at https://meet.jit.si/OSCOREGroupCommunication. Then we can all join at 14.00 tomorrow.
+
 5. When a token is posted a second time and it is already present on the server, I am getting some conflicting advice about what should be happening.  Specifically:
   - For an OSCORE token, I need to return a new/old/no nonce2 value?  I believe that we have said we should not be regenerating the OSCORE security context.
   - For a Join request, do I return a new/old/no kdcchallange value?
-
