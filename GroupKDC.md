@@ -52,6 +52,8 @@
 
 ## General Configuration and Parameter Values
 
+> JLS:  It would be better to move all of the IANA registrations over to IANA.md.  That makes it easier for me to look at a single location.
+
 ### Token protection
 
 - Use `Encrypt0` and `AES_CCM_16_64_128`
@@ -152,6 +154,9 @@ Three Group Managers are registered:
 - `"rs4"`
 
 For each Group Manager, Tokens can be released to access one OSCORE Group with name: `"feedca570000"`
+
+> JLS: I think we need to setup so that we can get more than one gorup in each of the group managers.
+
 
 ### Registered clients
 
