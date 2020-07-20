@@ -54,6 +54,8 @@
 
 > JLS:  It would be better to move all of the IANA registrations over to IANA.md.  That makes it easier for me to look at a single location.
 
+> MT: Done.
+
 ### Token protection
 
 - Use `Encrypt0` and `AES_CCM_16_64_128`
@@ -72,75 +74,6 @@ Possible to test:
 - DTLS profile in RPK mode
 - OSCORE profile
 
-### Content-Formats
-
-application/ace+cbor ............. `65000`
-application/ace-groupcomm+cbor ... `66000`
-
-### Profile identifiers
-
-coap_oscore ... `2`
-coap_dtls ..... `4`
-
-### Group OSCORE role identifiers
-
-Requester ... `1`
-Responder ... `2`
-Monitor ..... `3`
-Verifier .... `4`
-
-### Labels in the POST request to /authz-info
-
-sign_info ... `203`
-nonce1 (OSCORE profile) ....... `65`
-
-### Labels in response from /authz-info
-
-kdcchallence ... `205`
-nonce2 (OSCORE profile) .......... `66`
-
-### Labels in the Joining Request
-
-scope ...... `9`
-get_pub_keys ......... `101`
-client_cred .......... `102`
-client_cred_verify ... `103`
-
-### Labels in the Joining Response
-
-gkty ..................... `1`
-key ...................... `2`
-pub_keys ................. `3`
-exp ...................... `4`
-ace_groupcomm_profile ... `38`
-sign_info .............. `203`
-pub_key_enc ............ `204`
-num .................... `206`
-group_policies ......... `207`
-
-
-#### Values for 'gkty' in the Joining Response
-
-"Group OSCORE Security Context Object" ... `1`
-
-
-#### Values for 'ace_groupcomm_profile'
-
-"coap_group_oscore_app" ... `1`
-
-#### Labels for 'group_policies' entries
-
-"Sequence Number Synchronization Method" ... `1`
-"Key Update Check Interval" ................ `2`
-"Expiration delta" ......................... `3`
-"Group OSCORE Pairwise Mode" ............... `4`
-
-#### Values for "Sequence Number Synchronization Method"
-
-"Best effort" ............... `1`
-"Baseline" .................. `2`
-"Echo challenge-response" ... `3`
-
 ---
 
 ## AS configuration
@@ -157,6 +90,7 @@ For each Group Manager, Tokens can be released to access one OSCORE Group with n
 
 > JLS: I think we need to setup so that we can get more than one gorup in each of the group managers.
 
+> MT: Sure, it's easy to add more.
 
 ### Registered clients
 
