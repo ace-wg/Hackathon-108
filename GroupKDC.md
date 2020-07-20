@@ -94,10 +94,15 @@ Verifier .... `4`
 sign_info ... `203`
 nonce1 (OSCORE profile) ....... `65`
 
+> JLS - Per IANA.md I currently have this coded as 99
+
 ### Labels in response from /authz-info
 
 kdcchallence ... `205`
 nonce2 (OSCORE profile) .......... `66`
+> JLS - Per IANA.md I currently have this coded as 100
+
+> JLS - both of these groups would be better documented as being for the media type application/ace+cbor
 
 ### Labels in the Joining Request
 
@@ -156,6 +161,8 @@ Three Group Managers are registered:
 For each Group Manager, Tokens can be released to access one OSCORE Group with name: `"feedca570000"`
 
 > JLS: I think we need to setup so that we can get more than one gorup in each of the group managers.
+
+> JLS: I am working on how to setup my AS to provide for this, I would be better off of all of the group names are different if they are going to come from the same AS.
 
 
 ### Registered clients
