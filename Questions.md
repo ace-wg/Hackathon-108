@@ -50,3 +50,45 @@ My understanding is that in the case Weierstrass curves are used that would mean
 > MT - Based on [2], if a new/update Token is posted, the Client uses the the kdcchallenge in the response to the Token POST. That value is supposed to live as long as the posted Token. If the RS decides to change the value earlier than that, it replies with a 4.00 to a Joining Request, indicating the new value in the payload.
 
 [2] https://tools.ietf.org/html/draft-ietf-ace-key-groupcomm-oscore-08#section-6.2.1
+
+> JLS - In my state of semi-sleep last night I cam up with the following algorithm:
+~~~
+TokenA => The token that was posted
+TokenB => The token for the security context if any
+TokenC => The token in my database that I am comparing to
+
+if TokenA matches TokenC:
+   if TokenB security context wraps TokenA and TokenB.profile == TokenC.profile:
+      //  Need to make some assumptions about absent profiles in the token.
+      //  This corresponds to a replacement situation
+      //  Don't replace a TLS token with an OSCORE token
+      Replace w/o a new context
+   else if profile == oscore and no OscoreNonce1 in the post:
+      //  This can be interpreted as being a replace ask
+      Replace w/o a new context
+   else:
+      Replace w/ a new context
+else:
+   Add new token w/ a new context
+
+MatchToken(TokenA, TokenB, TokenC):
+  if TokenA.issuer == TokenC.issuer and TokenA.cwti == TokenC.cwti:
+      //  This should be exactly the same token
+      return true
+  if TokenA.issuer == TokenC.issuer and TokenA.subject == TokenC.subject:
+      //  This would be a token for the same individual
+      return true
+  if TokenA.cnf + Defaults == TokenC.cnf + Defaults:
+      //  This is the same cryptographic key
+      return true
+  if TokenB == TokenC and TokenA carried under TokenB security context:
+     //  I posted the new certificate using the old certificate for security
+     return true
+  return false
+~~~
+
+6.  Trying to figure out all of the locations where we switch from multicast to unicode.  Did I miss anything?
+*  Unsecure blockwise transfer (unicast) (what about multicast?)
+*  Secure blockwise transfer
+*  Respond to a group message (unicast or multicast)
+*  Reply to a message
