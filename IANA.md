@@ -14,6 +14,8 @@ In order to have common values we will be using the following for testing.
 
 * Nonce1 ==> 65  (ace-oscore-profile)
 * Nonce2 ==> 66  (ace-oscore-profile)
+* sign_info ... `203`
+* kdcchallence ... `205`
 
 ## for CoRAL
 
@@ -37,34 +39,32 @@ Responder ... `2`
 Monitor ..... `3`
 Verifier .... `4`
 
-### Labels in the POST request to /authz-info
+### Labels application/ace-groupcomm+cbor
 
-sign_info ... `203`
-nonce1 (OSCORE profile) ....... `65`
+* scope ...... `9`
+* get_pub_keys ......... `101`
+* client_cred .......... `102`
+* client_cred_verify ... `103`
+* cnonce
+* pub_key_repos
+* control_path
+* gkty ..................... `1`
+* key ...................... `2`
+* pub_keys ................. `3`
+* exp ...................... `4`
+* ace_groupcomm_profile ... `38`
+* sign_info .............. `203`
+* pub_key_enc ............ `204`
+* num .................... `206`
+* group_policies ......... `207`
+* mgt_key_material
 
-### Labels in response from /authz-info
+> JLS - Need to get a value for cnonce.  Probably don't care about the other items that do not have a value.
 
-kdcchallence ... `205`
-nonce2 (OSCORE profile) .......... `66`
+> JLS - Where is sign_info used for this type?  Currently only in token post.
 
-### Labels in the Joining Request
+> JLS - Where is pub_key_enc used for this message type?
 
-scope ...... `9`
-get_pub_keys ......... `101`
-client_cred .......... `102`
-client_cred_verify ... `103`
-
-### Labels in the Joining Response
-
-gkty ..................... `1`
-key ...................... `2`
-pub_keys ................. `3`
-exp ...................... `4`
-ace_groupcomm_profile ... `38`
-sign_info .............. `203`
-pub_key_enc ............ `204`
-num .................... `206`
-group_policies ......... `207`
 
 
 #### Values for 'gkty' in the Joining Response
