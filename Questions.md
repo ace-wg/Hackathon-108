@@ -36,5 +36,17 @@ My understanding is that in the case Weierstrass curves are used that would mean
 > Rikard: Okay, sounds good. I have created a Jitsi meeting room at https://meet.jit.si/OSCOREGroupCommunication. Then we can all join at 14.00 tomorrow.
 
 5. When a token is posted a second time and it is already present on the server, I am getting some conflicting advice about what should be happening.  Specifically:
+
+> MT - I guess it's about a new Token updating access rights?
+
   - For an OSCORE token, I need to return a new/old/no nonce2 value?  I believe that we have said we should not be regenerating the OSCORE security context.
+  
+> MT - Based on the second from last paragraph in [1], Nonce2 is not returned, and the same context is used. I have not yet implemented this recent addition in the OSCORE profile, I can try during the hackathon.
+
+[1] https://tools.ietf.org/html/draft-ietf-ace-oscore-profile-11#section-4.2
+
   - For a Join request, do I return a new/old/no kdcchallange value?
+
+> MT - Based on [2], if a new/update Token is posted, the Client uses the the kdcchallenge in the response to the Token POST. That value is supposed to live as long as the posted Token. If the RS decides to change the value earlier than that, it replies with a 4.00 to a Joining Request, indicating the new value in the payload.
+
+[2] https://tools.ietf.org/html/draft-ietf-ace-key-groupcomm-oscore-08#section-6.2.1
