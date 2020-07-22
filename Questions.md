@@ -93,4 +93,4 @@ MatchToken(TokenA, TokenB, TokenC):
 *  Respond to a group message (unicast or multicast)
 *  Reply to a message
 
-7. I wonder if there is a way to shut off the Pi cleanly without pulling the power? I tried to SSH into it to shut down but I couldn't. Actually I see 31.133.176.1 as my GW, so perhaps this came to you Jim instead.
+7. I wonder if there is a way to shut off the Pi cleanly without pulling the power? I tried to SSH into it to shut down but I couldn't. Actually I see 31.133.176.1 as my GW, so perhaps this came to you Jim instead. (Rikard)
