@@ -94,3 +94,6 @@ MatchToken(TokenA, TokenB, TokenC):
 *  Reply to a message
 
 7. I wonder if there is a way to shut off the Pi cleanly without pulling the power? I tried to SSH into it to shut down but I couldn't. Actually I see 31.133.176.1 as my GW, so perhaps this came to you Jim instead. (Rikard)
+
+> JLS - If I press CTRL+ALT+DEL on my keyboard then it shuts down.  That is my laptop address.  I assume that it did not respond to your SSH request.
+> That address is my gateway, but I don't think that is the box, I think that is something else entirely.

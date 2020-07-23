@@ -44,7 +44,7 @@ Audience: ResourceServer1
 
 ## Keys and Attributes - Jim's AS
 
-Jim Authorization Server - coap://31.133.176.1:5688  coaps://31.133.176.1.5689
+Jim Authorization Server - coap://31.133.177.29:5688  coaps://31.133.177.29:5689
     ipv6 -  2001:67c:1233:176:45b0:2b8c:135b:feb9 - but I cannot ping it currently from outside of the IETF network.
 
 Installer #1 - OSCORE only - Key to AS
